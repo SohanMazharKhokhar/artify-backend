@@ -1,0 +1,315 @@
+// // File: artify-backend/data/products.js
+
+// const products = [
+//   // T-Shirts (10)
+//   {
+//     id: 101,
+//     name: 'Custom Summer Shirt - Tropical',
+//     price: 899,
+//     type: 'T-Shirts',
+//     image: 'https://images.pexels.com/photos/9558699/pexels-photo-9558699.jpeg',
+//   },
+//   {
+//     id: 102,
+//     name: 'Custom Summer Shirt - Beach',
+//     price: 799,
+//     type: 'T-Shirts',
+//     image: 'https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg',
+//   },
+//   {
+//     id: 103,
+//     name: 'Custom Summer Shirt - Sunset',
+//     price: 849,
+//     type: 'T-Shirts',
+//     image: 'https://images.pexels.com/photos/1021291/pexels-photo-1021291.jpeg',
+//   },
+//   {
+//     id: 104,
+//     name: 'Custom Summer Shirt - Palm',
+//     price: 749,
+//     type: 'T-Shirts',
+//     image: 'https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg',
+//   },
+//   {
+//     id: 105,
+//     name: 'Custom Summer Shirt - Wave',
+//     price: 999,
+//     type: 'T-Shirts',
+//     image: 'https://images.pexels.com/photos/1484807/pexels-photo-1484807.jpeg',
+//   },
+//   {
+//     id: 106,
+//     name: 'Custom Summer Shirt - Surf',
+//     price: 899,
+//     type: 'T-Shirts',
+//     image: 'https://images.pexels.com/photos/3631430/pexels-photo-3631430.jpeg',
+//   },
+//   {
+//     id: 107,
+//     name: 'Custom Summer Shirt - Island',
+//     price: 799,
+//     type: 'T-Shirts',
+//     image: 'https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg',
+//   },
+//   {
+//     id: 108,
+//     name: 'Custom Summer Shirt - Coconut',
+//     price: 949,
+//     type: 'T-Shirts',
+//     image: 'https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg',
+//   },
+//   {
+//     id: 109,
+//     name: 'Custom Summer Shirt - Ocean',
+//     price: 899,
+//     type: 'T-Shirts',
+//     image: 'https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg',
+//   },
+//   {
+//     id: 110,
+//     name: 'Custom Summer Shirt - Sand',
+//     price: 699,
+//     type: 'T-Shirts',
+//     image: 'https://images.pexels.com/photos/1032110/pexels-photo-1032110.jpeg',
+//   },
+
+//   // Mugs (10) - Nescafe Style
+//   {
+//     id: 201,
+//     name: 'Classic Coffee Mug',
+//     price: 349,
+//     type: 'Mugs',
+//     image: 'https://images.pexels.com/photos/4792391/pexels-photo-4792391.jpeg',
+//   },
+//   {
+//     id: 202,
+//     name: 'Nescafe Gold Mug',
+//     price: 399,
+//     type: 'Mugs',
+//     image: 'https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg',
+//   },
+//   {
+//     id: 203,
+//     name: 'Minimalist Coffee Mug',
+//     price: 299,
+//     type: 'Mugs',
+//     image: 'https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg',
+//   },
+//   {
+//     id: 204,
+//     name: 'Vintage Nescafe Mug',
+//     price: 449,
+//     type: 'Mugs',
+//     image: 'https://images.pexels.com/photos/905485/pexels-photo-905485.jpeg',
+//   },
+//   {
+//     id: 205,
+//     name: 'Ceramic Coffee Mug',
+//     price: 379,
+//     type: 'Mugs',
+//     image: 'https://images.pexels.com/photos/1727123/pexels-photo-1727123.jpeg',
+//   },
+//   {
+//     id: 206,
+//     name: 'Black Nescafe Mug',
+//     price: 499,
+//     type: 'Mugs',
+//     image: 'https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg',
+//   },
+//   {
+//     id: 207,
+//     name: 'Glass Coffee Mug',
+//     price: 599,
+//     type: 'Mugs',
+//     image: 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+//   },
+//   {
+//     id: 208,
+//     name: 'Travel Coffee Mug',
+//     price: 699,
+//     type: 'Mugs',
+//     image: 'https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg',
+//   },
+//   {
+//     id: 209,
+//     name: 'Espresso Nescafe Mug',
+//     price: 549,
+//     type: 'Mugs',
+//     image: 'https://images.pexels.com/photos/5587028/pexels-photo-5587028.jpeg',
+//   },
+//   {
+//     id: 210,
+//     name: 'Double-Wall Coffee Mug',
+//     price: 649,
+//     type: 'Mugs',
+//     image: 'https://images.pexels.com/photos/374147/pexels-photo-374147.jpeg',
+//   },
+
+//   // Posters (10)
+//   {
+//     id: 301,
+//     name: 'Vintage Movie Poster',
+//     price: 499,
+//     type: 'Posters',
+//     image: 'https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg',
+//   },
+//   {
+//     id: 302,
+//     name: 'Motivational Quote Poster',
+//     price: 399,
+//     type: 'Posters',
+//     image: 'https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg',
+//   },
+//   {
+//     id: 303,
+//     name: 'Space Exploration Poster',
+//     price: 599,
+//     type: 'Posters',
+//     image: 'https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg',
+//   },
+//   {
+//     id: 304,
+//     name: 'Abstract Art Poster',
+//     price: 449,
+//     type: 'Posters',
+//     image: 'https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg',
+//   },
+//   {
+//     id: 305,
+//     name: 'Travel Destination Poster',
+//     price: 549,
+//     type: 'Posters',
+//     image: 'https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg',
+//   },
+//   {
+//     id: 306,
+//     name: 'Music Band Poster',
+//     price: 499,
+//     type: 'Posters',
+//     image: 'https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg',
+//   },
+//   {
+//     id: 307,
+//     name: 'Minimalist Landscape Poster',
+//     price: 399,
+//     type: 'Posters',
+//     image: 'https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg',
+//   },
+//   {
+//     id: 308,
+//     name: 'Wildlife Photography Poster',
+//     price: 649,
+//     type: 'Posters',
+//     image: 'https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg',
+//   },
+//   {
+//     id: 309,
+//     name: 'Retro Gaming Poster',
+//     price: 599,
+//     type: 'Posters',
+//     image: 'https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg',
+//   },
+//   {
+//     id: 310,
+//     name: 'Galaxy Nebula Poster',
+//     price: 699,
+//     type: 'Posters',
+//     image: 'https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg',
+//   },
+
+//   // Stickers (10)
+//   {
+//     id: 401,
+//     name: 'Funny Cat Sticker Pack',
+//     price: 199,
+//     type: 'Stickers',
+//     image: 'https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg',
+//   },
+//   {
+//     id: 402,
+//     name: 'Boho Floral Stickers',
+//     price: 149,
+//     type: 'Stickers',
+//     image: 'https://images.pexels.com/photos/462118/pexels-photo-462118.jpeg',
+//   },
+//   {
+//     id: 403,
+//     name: 'Space-Themed Stickers',
+//     price: 249,
+//     type: 'Stickers',
+//     image: 'https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg',
+//   },
+//   {
+//     id: 404,
+//     name: 'Waterproof Laptop Stickers',
+//     price: 299,
+//     type: 'Stickers',
+//     image: 'https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg',
+//   },
+//   {
+//     id: 405,
+//     name: 'Vinyl Decal Stickers',
+//     price: 179,
+//     type: 'Stickers',
+//     image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg',
+//   },
+//   {
+//     id: 406,
+//     name: 'Cartoon Character Stickers',
+//     price: 219,
+//     type: 'Stickers',
+//     image: 'https://images.pexels.com/photos/161559/background-bitter-breakfast-bright-161559.jpeg',
+//   },
+//   {
+//     id: 407,
+//     name: 'Glow-in-the-Dark Stickers',
+//     price: 349,
+//     type: 'Stickers',
+//     image: 'https://images.pexels.com/photos/1021876/pexels-photo-1021876.jpeg',
+//   },
+//   {
+//     id: 408,
+//     name: 'Holographic Sticker Pack',
+//     price: 399,
+//     type: 'Stickers',
+//     image: 'https://images.pexels.com/photos/3266700/pexels-photo-3266700.jpeg',
+//   },
+//   {
+//     id: 409,
+//     name: 'Custom Name Stickers',
+//     price: 279,
+//     type: 'Stickers',
+//     image: 'https://images.pexels.com/photos/2735981/pexels-photo-2735981.jpeg',
+//   },
+//   {
+//     id: 410,
+//     name: 'Emoji Sticker Collection',
+//     price: 199,
+//     type: 'Stickers',
+//     image: 'https://images.pexels.com/photos/2377565/pexels-photo-2377565.jpeg',
+//   },
+// ];
+
+// module.exports = products; // Make sure to export the array
+// data/products.js (Example - ensure all products have manufacturerId)
+const products = [
+  {
+    id: 101,
+    name: 'Vintage Poster "Coffee"',
+    price: 999,
+    type: 'Posters',
+    image: 'https://images.pexels.com/photos/101533/pexels-photo-101533.jpeg?auto=compress&cs=tinysrgb&w=600',
+    manufacturerId: 'mfg_alpha_prints', // <--- This must be present!
+  },
+  {
+    id: 201,
+    name: 'Retro T-Shirt "Sunset"',
+    price: 799,
+    type: 'T-Shirts',
+    image: 'https://images.pexels.com/photos/1004128/pexels-photo-1004128.jpeg?auto=compress&cs=tinysrgb&w=600',
+    manufacturerId: 'mfg_beta_wear',
+  },
+  // ... all other products
+];
+
+module.exports = products;
