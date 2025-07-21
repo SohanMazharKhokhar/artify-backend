@@ -13,7 +13,7 @@ This backend was developed as part of a final year project to demonstrate full-s
 ## Developer
 
 - **Name:** Sohan Mazhar Khokhar  
-- **Role:** FullStack Developer  
+- **Role:** Backened Developer  
 - **Technology Stack:** Node.js, Express.js, MongoDB, JWT, bcryptjs, Mongoose, ReactNative
 - **Supervised by:** Ms. Hina Tahir (Final Year Project Advisor)
 
